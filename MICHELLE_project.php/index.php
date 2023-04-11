@@ -1,26 +1,25 @@
 <?php require_once "includes/header.php" ?>
-<h1 class="text-center"> Registration of IT Conference </h1>
-<body>
- 
+<h1 class="text-center">Registration of IT Conference</h1>
 
-    <form>
-    <div class="form-group">
-    <label for="exampleInputFirstname">First Name</label>
-    <input type="first name" class="form-control" id="exampleInputFirstName" aria-describedby="FnameHelp">
+<form method="GET" action="success.php"> 
+
+<div class="form-group">
+    <label for="exampleInputFirstname">firstname</label>
+    <input type="text" class="form-control" id="exampleInputFirstName" aria-describedby="FnameHelp"name="firstname">
 </div>
 <div class="form-group">
-    <label for="exampleInputLastname">Last Name</label>
-    <input type="last name" class="form-control" id="exampleInputLastName" aria-describedby="LnameHelp">
-    </div>
+    <label for="exampleInputLastname">lastname</label>
+    <input type="text" class="form-control" id="exampleInputLastName" aria-describedby="LnameHelp"name="lastname">
+</div>
 
-    <form action="/action_page.php">
-  <label for="birthday">Date of Birth:</label>
-  <input type="date" id="birthday" name="birthday">
-</form>
-<form action="/action_page.php">
+<div class="form-group">
+  <label for="date">Date</label>
+  <input type="text" id="datepicker" placeholder= "Enter Your Birthday" name="date"><br>
+</div>
+
   <label for="Specialty">Specialty:</label>
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="checkbox" class="form-check-input" id="Check1">
     <label class="form-check-label" for="exampleCheck1"> DATABASE ADMIN</label>
     </div>
     <div class="form-group form-check">
